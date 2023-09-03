@@ -107,6 +107,11 @@
   <ItemGroup>
     <Content Include="assets\assets\css\style.css" />
     <Content Include="assets\assets\img\apple-touch-icon.png" />
+    <Content Include="assets\assets\img\BG%25.jpg" />
+    <Content Include="assets\assets\img\BG1.jpg" />
+    <Content Include="assets\assets\img\bg2.png" />
+    <Content Include="assets\assets\img\bg3.jpg" />
+    <Content Include="assets\assets\img\BG4.png" />
     <Content Include="assets\assets\img\card.jpg" />
     <Content Include="assets\assets\img\favicon.png" />
     <Content Include="assets\assets\img\logo.png" />
@@ -129,6 +134,7 @@
     <Content Include="assets\assets\img\slides-2.jpg" />
     <Content Include="assets\assets\img\slides-3.jpg" />
     <Content Include="assets\assets\js\main.js" />
+    <Content Include="assets\assets\js\new.js" />
     <Content Include="assets\assets\scss\Readme.txt" />
     <Content Include="assets\assets\vendor\apexcharts\apexcharts.amd.js" />
     <Content Include="assets\assets\vendor\apexcharts\apexcharts.common.js" />
@@ -385,6 +391,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="home.aspx" />
     <Content Include="Home2.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="PAVANaspx.aspx" />
     <Content Include="assets\css\bootstrap-grid.css.map" />
     <Content Include="assets\css\bootstrap-grid.min.css.map" />
@@ -572,6 +579,13 @@
     </Compile>
     <Compile Include="Home2.aspx.designer.cs">
       <DependentUpon>Home2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="PAVANaspx.aspx.cs">
       <DependentUpon>PAVANaspx.aspx</DependentUpon>

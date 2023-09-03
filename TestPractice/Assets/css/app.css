@@ -288,7 +288,7 @@ a {
 
     a:hover {
         --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a:not([href]):not([class]),
@@ -3699,7 +3699,7 @@ fieldset:disabled .btn {
 
     .btn-link:focus-visible,
     .btn-link:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     .btn-link:focus-visible {
@@ -7585,7 +7585,7 @@ fieldset:disabled .btn {
 }
 
 .text-decoration-underline {
-    text-decoration: underline !important;
+    text-decoration: none !important;
 }
 
 .text-decoration-line-through {

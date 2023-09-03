@@ -13,32 +13,34 @@
     <script src="assets/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/assets/vendor/bootstrap/js/bootstrap.js"></script>
    <link href="assets/css/style.css" rel="stylesheet" />
-    	 <link href="assets/css/style.css" rel="stylesheet" />
+    
     <style>
 /**/
         .header {
-            background: #4154f1;
+            background: #d8eefd
         }
         .sidebar {
-            background-color: #4154f1;
+            background-color: #0699f7;
         }
         .nav-item {
-                background-color: #4154f1;
+                background-color: #0699f7;
         }
         .nav-content {
-                background-color: #4154f1;
+                background-color: #0699f7;
 
         }
      
         .sidebar-nav .nav-link.collapsed{
-                background: #4154f1;
+                background: #0699f7;
         }
         .sidebar-nav .nav-link {
-             background: #4154f1;
-        .sidebar-nav .nav-link:hover i {
+            background: #0699f7;
         }
-  color: #ffff;
-}
+        .sidebar-nav .nav-link:hover i {
+                                             color: #ffff;
+        }
+
+
         .sidebar-nav .nav-link.collapsed {
   color: #ffff;
 }
@@ -71,7 +73,7 @@
 
         .sidebar {
     position: fixed;
-    top: 60px;
+    top: 24%;
     left: 0;
     bottom: 0;
     width: 300px;
@@ -84,58 +86,74 @@
     box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
    
 }
-        
-         /* //  background:#ebe7e7*/
-        
 
-
+        .header2 {
+            background-color:#3e4242;
+        }
+       
+/*        .header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}*/
+       
+        
     </style>
-     <header id="header" class="header fixed-top d-flex align-items-center">
+      
+
+     <header id="header" class="header fixed-top d-flex align-items-center" style="height:17%;">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center" style="text-decoration:none;">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">NiceAdmin</span>
+        <span class="span" style="color:#0699f7;font-size:33px;">Stock Management</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div><!-- End Logo -->
+    </div>
 
+  </header>
+    <div class="header2 fixed-top d-flex align-items-center" style="position:fixed; top: 17%;    height: 7%;"> 
+
+          
+    </div>
+</head>
     
-
-  </header><!-- End Header -->
-    <aside id="sidebar" class="sidebar">
+    <form id="form1" runat="server">
+        <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="index.html" style="text-decoration:none;">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#" style="text-decoration:none;">
           <i class="bi bi-menu-button-wide"></i><span>Shop Details </span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="ShopEntry.aspx">
+            <a href="ShopEntry.aspx" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Shop Entry</span>
             </a>
           </li>
           <li>
-            <a href="ShopApproval.aspx">
+            <a href="ShopApproval.aspx" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Shop entry Approval</span>
             </a>
           </li>
           <li>
-            <a href="components-badges.html">
+            <a href="components-badges.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Shop details Page</span>
             </a>
           </li>
              <li>
-            <a href="components-badges.html">
+            <a href="components-badges.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Update Shop Details</span>
             </a>
           </li>
@@ -145,29 +163,31 @@
 
      
           <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#vendor-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#vendor-nav" data-bs-toggle="collapse" href="#" style="text-decoration:none;">
           <i class="bi bi-menu-button-wide"></i><span>vendor Datails</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="vendor-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
 
             <li>
-            <a href="components-breadcrumbs.html">
+            <a href="components-breadcrumbs.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Vendor Registration</span>
             </a>
           </li>
           <li>
-            <a href="components-buttons.html">
+            <a href="components-buttons.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Vendor Approval</span>
             </a>
           </li>
           <li>
-            <a href="components-cards.html">
+            <a href="components-cards.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Vendor Details Page</span>
             </a>
           </li>
           <li>
+
+
               <li>
-            <a href="components-list-group.html">
+            <a href="components-list-group.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Update Vendor Details</span>
             </a>
           </li>
@@ -175,33 +195,33 @@
       </li>
 
             <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#vendorMM-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#vendorMM-nav" data-bs-toggle="collapse" href="#" style="text-decoration:none;">
           <i class="bi bi-menu-button-wide"></i><span>vendor Budget Management</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="vendorMM-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
 
               <li>
-            <a href="components-breadcrumbs.html">
+            <a href="components-breadcrumbs.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Add money in vendor Account</span>
             </a>
           </li>
             <li>
-            <a href="components-breadcrumbs.html">
+            <a href="components-breadcrumbs.html"style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Buy Product from Shop</span>
             </a>
           </li>
           <li>
-            <a href="components-buttons.html">
+            <a href="components-buttons.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Bill payment to Shop</span>
             </a>
           </li>
                <li>
-            <a href="components-buttons.html">
+            <a href="components-buttons.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Bill inbox</span>
             </a>
           </li>
                 <li>
-            <a href="components-buttons.html">
+            <a href="components-buttons.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Bill outbox</span>
             </a>
           </li>
@@ -212,7 +232,7 @@
           </li>--%>
           <li>
               <li>
-            <a href="components-list-group.html">
+            <a href="components-list-group.html"style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Bill Details For Vendor</span>
             </a>
           </li>
@@ -220,18 +240,18 @@
       </li>
 
          <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#Store-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#Store-nav" data-bs-toggle="collapse" href="#" style="text-decoration:none;">
           <i class="bi bi-menu-button-wide"></i><span>Store Stock Management</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="Store-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
 
             <li>
-            <a href="components-breadcrumbs.html">
+            <a href="components-breadcrumbs.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Add/Remove product to Shop</span>
             </a>
           </li>
           <li>
-            <a href="components-buttons.html">
+            <a href="components-buttons.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>vendors notification </span>
             </a>
        
@@ -242,12 +262,12 @@
           </li>--%>
           <li>
               <li>
-            <a href="components-list-group.html">
+            <a href="components-list-group.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span>Bill Details for Shop</span>
             </a>
           </li>
              <li>
-            <a href="components-list-group.html">
+            <a href="components-list-group.html" style="text-decoration:none;">
               <i class="bi bi-circle"></i><span> Stock Details in Shop</span>
             </a>
           </li>
@@ -349,28 +369,28 @@
       <li class="nav-heading">Reports</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="users-profile.html" style="text-decoration:none;">
           <i class="bi bi-person"></i>
           <span>Expenditure Report of vendor</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq.html">
+        <a class="nav-link collapsed" href="pages-faq.html" style="text-decoration:none;">
           <i class="bi bi-question-circle"></i>
           <span>Expenditure Report of  Shop</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
+        <a class="nav-link collapsed" href="pages-contact.html" style="text-decoration:none;">
           <i class="bi bi-envelope"></i>
           <span>Stock wise Bill Payment Report</span>
         </a>
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register.html">
+        <a class="nav-link collapsed" href="pages-register.html" style="text-decoration:none;">
           <i class="bi bi-card-list"></i>
           <span>Cancle Payment Details</span>
         </a>
@@ -400,16 +420,12 @@
     </ul>
 
   </aside>
-</head>
-    
-    <form id="form1" runat="server">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
             </asp:ContentPlaceHolder>
       
 
-    <!-- ======= Sidebar ======= -->
-  <!-- End Sidebar-->
+  
 
 		 </form>
 

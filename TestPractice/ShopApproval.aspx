@@ -24,7 +24,7 @@
       width: 77%;
     height: 30%;
     position: absolute;
-    top: 18%;
+    top: 28%;
         background: #cacaff;
     border-radius: 36px;
 }
@@ -43,7 +43,7 @@
 
         }
       .content-box {
-              background: #4154f1;
+              background: #0699f7;
     margin-top: 21px;
     border-radius: 15px 16px 0px 0px;
         }

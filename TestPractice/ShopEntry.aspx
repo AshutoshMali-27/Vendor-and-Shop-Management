@@ -24,7 +24,7 @@
       width: 77%;
     height: 30%;
     position: absolute;
-    top: 18%;
+    top: 28%;
         background: #cacaff;
     border-radius: 36px;
 }
@@ -42,10 +42,15 @@
 
         }
         .content-box {
-            background: #4154f1;
+            background: #0699f7;
                 margin-top: 22px;
             border-radius: 14px;
         }
+        .form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 0rem;
+    margin-bottom: 0.125rem;
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -64,7 +69,16 @@
       </nav>
     </div>
     <div class="content-box">
-          <h5 class="card-title" style="color:white;padding: 11px;margin: 3px;">SHOP ENTRY</h5>
+        <table style="width:100%">
+        <tr>
+            <td>
+  <h5 class="card-title" style="color:white;padding: 11px;margin: 3px;">SHOP ENTRY</h5>
+            </td>
+            <td colspan="6" style="margin:auto;text-align:right;">
+                <button type="button" class="btn btn-danger" style="margin: 0px 17px 0px 0px;">Back</button>
+            </td>
+        </tr>
+            </table>
     <div class="card">
             <div class="card-body">
              <%-- <h5 class="card-title">Multi Columns Form</h5>--%>
@@ -87,8 +101,8 @@
                              Shop Name
                         </td>
                         <td colspan="2">
-                            <input type="text" class="form-check" id="inputName5" class="form-check">
 
+                            <asp:TextBox runat="server" class="form-check" id="txtshopname"  ></asp:TextBox>
                         </td>
                     </tr>
                         <tr >
@@ -96,7 +110,9 @@
                             Address 
                         </td>
                         <td colspan="5">
-                             <input type="text" class="form-check" id="inputName5" style="width: 100%;">
+                            
+                            
+                            <asp:TextBox runat="server" class="form-check" id="txtaddress" style="width: 100%;" ></asp:TextBox>
                         </td>
                     </tr>
                         <tr >
@@ -104,19 +120,23 @@
                             State :
                         </td>
                         <td>
-                             <input type="text" class="form-check" id="inputName5">
+                         
+                            
+                            <asp:TextBox runat="server" class="form-check" id="txtstate"  ></asp:TextBox>
                         </td>
                         <td>
  District
                         </td>
                         <td>
-                             <input type="text" class="form-check" id="inputName5">
+                        
+                               <asp:TextBox runat="server" class="form-check" id="txtdistrict"  ></asp:TextBox>
                         </td>
                         <td>
                             City
                         </td>
                         <td>
-                            <input type="text" class="form-check" id="inputName5">
+                         
+                             <asp:TextBox runat="server" class="form-check" id="txtcity"  ></asp:TextBox>
 
                         </td>
                     </tr>
@@ -125,13 +145,15 @@
                             Shop Type
                         </td>
                         <td>
-                             <input type="text" class="form-check" id="inputName5">
+
+                               <asp:TextBox runat="server" class="form-check" id="txtshoptype"  ></asp:TextBox>
                         </td>
                         <td>
                           Shop Owner Name
                         </td>
                         <td>
-                             <input type="text" class="form-check" id="inputName5">
+                            
+                             <asp:TextBox runat="server" class="form-check" id="txtshopownername"  ></asp:TextBox>
                         </td>
                      
                      
@@ -146,14 +168,16 @@
                                     Owners Addhar No.
                                </td>
                                <td>
-                                   <input type="text" class="form-check" id="inputName5">
+
+                                    <asp:TextBox runat="server" class="form-check" id="txtowneraddherno"  ></asp:TextBox>
                             
                                </td>
                         <td> 
                             Owner Date of birth
                         </td>
                         <td>
-                             <input type="text" class="form-check" id="inputName5">
+                             <%--<input type="text" class="form-check" id="inputName5">--%>
+                              <asp:TextBox runat="server" class="form-check" id="txtdob"  ></asp:TextBox>
                         </td>
                         
                         
@@ -165,13 +189,16 @@
                              Shop Paper
                             </td>
                             <td>
-                                 <input type="text" class="form-check" id="inputName5">
+
+                                 <asp:TextBox runat="server" class="form-check" id="txtshoppaper"  ></asp:TextBox>
                             </td>
                             <td>
                                   Addhar card  
                             </td>
                             <td>
-                                <input type="text" class="form-check" id="inputName5">
+                           
+                                
+                                 <asp:TextBox runat="server" class="form-check" id="txtaddharcard"  ></asp:TextBox>
                             
                             </td>
                         </tr>
@@ -181,7 +208,8 @@
                 <tr >
               
                         <td colspan="6">
-         <button type="button" class="btn btn-primary" style="margin-left: 40%;margin-top: 20px;">Submit</button>
+<%--         <button type="button" class="btn btn-primary" style="margin-left: 40%;margin-top: 20px;">Submit</button>--%>
+                            <asp:Button runat="server" Text="Submit" class="btn btn-primary" style="margin-left: 40%;margin-top: 20px;" />
                         </td>
                    
                  
