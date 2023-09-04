@@ -18,6 +18,7 @@
 /**/
         .header {
             background-color:white;
+
         }
         .sidebar {
             background-color: #0699f7;
