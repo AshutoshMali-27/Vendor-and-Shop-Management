@@ -33,40 +33,40 @@ namespace TestPractice
         protected global::System.Web.UI.WebControls.TextBox txtaddress;
 
         /// <summary>
-        /// txtstate control.
+        /// ddlstate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtstate;
+        protected global::System.Web.UI.WebControls.DropDownList ddlstate;
 
         /// <summary>
-        /// txtdistrict control.
+        /// ddldistrict control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtdistrict;
+        protected global::System.Web.UI.WebControls.DropDownList ddldistrict;
 
         /// <summary>
-        /// txtcity control.
+        /// ddlcity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcity;
+        protected global::System.Web.UI.WebControls.DropDownList ddlcity;
 
         /// <summary>
-        /// txtshoptype control.
+        /// ddlshoptype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtshoptype;
+        protected global::System.Web.UI.WebControls.DropDownList ddlshoptype;
 
         /// <summary>
         /// txtshopownername control.
@@ -96,21 +96,21 @@ namespace TestPractice
         protected global::System.Web.UI.WebControls.TextBox txtdob;
 
         /// <summary>
-        /// txtshoppaper control.
+        /// uploadshoppaper control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtshoppaper;
+        protected global::System.Web.UI.WebControls.FileUpload uploadshoppaper;
 
         /// <summary>
-        /// txtaddharcard control.
+        /// uloadaddharcard control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtaddharcard;
+        protected global::System.Web.UI.WebControls.FileUpload uloadaddharcard;
     }
 }

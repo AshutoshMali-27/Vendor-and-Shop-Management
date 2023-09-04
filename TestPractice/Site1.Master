@@ -17,7 +17,7 @@
     <style>
 /**/
         .header {
-            background: #d8eefd
+            background-color:white;
         }
         .sidebar {
             background-color: #0699f7;
@@ -73,7 +73,7 @@
 
         .sidebar {
     position: fixed;
-    top: 24%;
+    top: 16%;
     left: 0;
     bottom: 0;
     width: 300px;
@@ -103,7 +103,7 @@
     </style>
       
 
-     <header id="header" class="header fixed-top d-flex align-items-center" style="height:17%;">
+     <header id="header" class="header fixed-top d-flex align-items-center" style="height:11%;">
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center" style="text-decoration:none;">
@@ -114,7 +114,7 @@
     </div>
 
   </header>
-    <div class="header2 fixed-top d-flex align-items-center" style="position:fixed; top: 17%;    height: 7%;"> 
+    <div class="header2 fixed-top d-flex align-items-center" style="position:fixed; top: 11%;    height: 5%;"> 
 
           
     </div>
@@ -423,7 +423,9 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
             </asp:ContentPlaceHolder>
-      
+      <body style="background-color: white;">
+
+      </body>
 
   
 

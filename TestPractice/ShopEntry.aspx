@@ -23,10 +23,10 @@
 }
         
         .box {
-      width: 77%;
+      width: 74%;
     height: 30%;
     position: absolute;
-    top: 28%;
+    top: 20%;
         background: #cacaff;
     border-radius: 36px;
 }
@@ -49,10 +49,16 @@
             border-radius: 14px;
         }
         .form-check {
-    display: block;
-    min-height: 1.5rem;
-    padding-left: 0rem;
-    margin-bottom: 0.125rem;
+            display: block;
+            min-height: 1.5rem;
+            padding-left: 0rem;
+            margin-bottom: 0.125rem;
+        }
+
+        .tr .td {
+            border:1px solid black;
+        }
+
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -84,14 +90,14 @@
     <div class="card">
             <div class="card-body">
              <%-- <h5 class="card-title">Multi Columns Form</h5>--%>
-                <table width="100%" class="form-control p-1 table-sm" style="margin: 3px;">
+                <table width="100%" class="form-control p-1 table-sm" style="margin: 3px; ">
 
                     <tr >
                         <td> 
                             SHOP No.
                         </td>
                         <td>
-                             <input type="text" class="form-check" id="inputName5" class="form-check">
+                             <input type="text" class="form-check" id="inputName5" style="padding-left:0px;" >
                         </td>
                        <%-- <td>
  Your name
@@ -104,7 +110,7 @@
                         </td>
                         <td colspan="2">
 
-                            <asp:TextBox runat="server" class="form-check" id="txtshopname"  ></asp:TextBox>
+                            <asp:TextBox runat="server" class="form-check" id="txtshopname"  style="padding-left:0px;" ></asp:TextBox>
                         </td>
                     </tr>
                         <tr >
@@ -112,9 +118,7 @@
                             Address 
                         </td>
                         <td colspan="5">
-                            
-                            
-                            <asp:TextBox runat="server" class="form-check" id="txtaddress" style="width: 100%;" ></asp:TextBox>
+                            <asp:TextBox runat="server" class="form-check" id="txtaddress" style="width: 86%; padding-left:0px;" ></asp:TextBox>
                         </td>
                     </tr>
                         <tr >
@@ -122,69 +126,52 @@
                             State :
                         </td>
                         <td>
-                         
-                            
-                            <asp:TextBox runat="server" class="form-check" id="txtstate"  ></asp:TextBox>
+                            <asp:DropDownList class="form-check"  runat="server" id="ddlstate" style="width: 63%; padding-left:0px; "></asp:DropDownList>
                         </td>
                         <td>
- District
+                        District
                         </td>
                         <td>
-                        
-                               <asp:TextBox runat="server" class="form-check" id="txtdistrict"  ></asp:TextBox>
+                            <asp:DropDownList class="form-check"  runat="server" id="ddldistrict" style="width: 63%; padding-left:0px;"></asp:DropDownList>
                         </td>
+                             </tr>
+                    <tr>
                         <td>
                             City
                         </td>
                         <td>
-                         
-                             <asp:TextBox runat="server" class="form-check" id="txtcity"  ></asp:TextBox>
-
+                        <asp:DropDownList class="form-check"  runat="server" id="ddlcity" style="width:63%;padding-left:0px;" ></asp:DropDownList>
                         </td>
-                    </tr>
-                        <tr>
-                        <td> 
+                           <td> 
                             Shop Type
                         </td>
                         <td>
-
-                               <asp:TextBox runat="server" class="form-check" id="txtshoptype"  ></asp:TextBox>
+ <asp:DropDownList class="form-check"  runat="server" id="ddlshoptype" style="width: 63%;padding-left:0px;" ></asp:DropDownList>
                         </td>
+                   </tr>
+                        <tr>
+                     
                         <td>
                           Shop Owner Name
                         </td>
                         <td>
-                            
-                             <asp:TextBox runat="server" class="form-check" id="txtshopownername"  ></asp:TextBox>
+                             <asp:TextBox runat="server" class="form-check" id="txtshopownername" style="padding-left:0px;padding-left:0px;" ></asp:TextBox>
                         </td>
-                     
-                     
-                     
-                     
-                     
-
-                     
-                    </tr>
-                        <tr>
-                               <td>
+                      <td>
                                     Owners Addhar No.
                                </td>
                                <td>
-
-                                    <asp:TextBox runat="server" class="form-check" id="txtowneraddherno"  ></asp:TextBox>
-                            
+                                    <asp:TextBox runat="server" class="form-check" id="txtowneraddherno" style="padding-left:0px;"  ></asp:TextBox>
                                </td>
+                    </tr>
+                        <tr>
+                              
                         <td> 
                             Owner Date of birth
                         </td>
                         <td>
-                             <%--<input type="text" class="form-check" id="inputName5">--%>
-                              <asp:TextBox runat="server" class="form-check" id="txtdob"  ></asp:TextBox>
-                        </td>
-                        
-                        
-                        
-                        
+                              <asp:TextBox runat="server" class="form-check" id="txtdob" style="padding-left:0px;" placeholder="DD/MM/YYYY" ></asp:TextBox> 
+                        </td>  
                         <tr>
 
                             <td>
@@ -192,7 +179,8 @@
                             </td>
                             <td>
 
-                                 <asp:TextBox runat="server" class="form-check" id="txtshoppaper"  ></asp:TextBox>
+<%--                                 <asp:TextBox runat="server" class="form-check" id="txtshoppaper" style="padding-left:0px;" ></asp:TextBox>--%>
+                                 <asp:FileUpload runat="server"  id="uploadshoppaper"></asp:FileUpload>
                             </td>
                             <td>
                                   Addhar card  
@@ -200,7 +188,8 @@
                             <td>
                            
                                 
-                                 <asp:TextBox runat="server" class="form-check" id="txtaddharcard"  ></asp:TextBox>
+                                 <%--<asp:TextBox runat="server" class="form-check" id="txtaddharcard"  style="padding-left:0px;" ></asp:TextBox>--%>
+                                  <asp:FileUpload runat="server"  id="uloadaddharcard"></asp:FileUpload>
                             
                             </td>
                         </tr>
