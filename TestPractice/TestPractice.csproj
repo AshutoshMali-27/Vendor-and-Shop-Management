@@ -512,7 +512,10 @@
     <Content Include="assets\assets\vendor\tinymce\composer.json" />
     <Content Include="assets\assets\vendor\tinymce\package.json" />
     <Content Include="assets\assets\vendor\tinymce\README.md" />
+    <Content Include="shopentry2.aspx" />
+    <Content Include="shopslip.aspx" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="shopApprovalinbox.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -606,6 +609,20 @@
     <Compile Include="ShopEntry.aspx.designer.cs">
       <DependentUpon>ShopEntry.aspx</DependentUpon>
     </Compile>
+    <Compile Include="shopentry2.aspx.cs">
+      <DependentUpon>shopentry2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopentry2.aspx.designer.cs">
+      <DependentUpon>shopentry2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopslip.aspx.cs">
+      <DependentUpon>shopslip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopslip.aspx.designer.cs">
+      <DependentUpon>shopslip.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -620,6 +637,13 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopApprovalinbox.aspx.cs">
+      <DependentUpon>shopApprovalinbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopApprovalinbox.aspx.designer.cs">
+      <DependentUpon>shopApprovalinbox.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
